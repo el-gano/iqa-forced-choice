@@ -1,0 +1,70 @@
+
+[OADAT]
+Single Wavelength
+SWFD_ms, 5 -> 12 comparisons, 24 seconds/scene, 480 seconds total (20)
+SWFD_sc, 5 -> 12 comparisons, 24 seconds/scene, 480 seconds total (20)
+
+Simulated Cylinders
+SCD, 4 -> 8 comparisons, 16 seconds/scene, 320 seconds total (20)
+
+Multispectral Forearm
+MSFD, 4 -> 8 comparisons, 16 seconds/scene, 320 seconds total (20)
+
+
+[Mice, Phantom, Virtual Phantom]
+Mice, 7->6 -> 16 comparisons, 32 seconds/scene, 640 seconds total (20)
+Phantom, 6 -> 16 comparisons, 32 seconds/scene, 1088 seconds total (34)
+v_phantom, 6 -> 16 comparisons, 32 seconds/scene, 640 seconds total (20)
+
+[ZENODO V2]
+ZENODO, 3 -> 5 comparisons, 10 seconds/scene, 3780 seconds total (378)
+
+[NNE]
+NNE, 6 -> 16 comparisons, 32 seconds/scene, 162688 seconds total (5084)
+
+[ACOUSTICX]
+Kwave, BMPI, BV, Doransso, 7 -> 18 comparisons, 36 seconds/scene, 180 seconds total (5)
+EDITS: grayscale crop
+
+[VISUALSONICS]
+Bladder 4 -> 8 comparisons, 16 seconds/scene, 16 seconds total (1)
+EDITS: grayscale crop
+
+----------------------------------
+[VARIED SPLIT CONTENTS]
+  [Mouse Phantom]
+    22xx Mice x10 IN VIVO
+    23xx Phantom - 3 Circles x4 PHANTOM
+  [OADAT]
+    32xx SWFD_sc SEMICIRCLE x10 IN VIVO
+    33xx SWFD_ms MULTISEGMENT x10 IN VIVO
+  [ACOUSTICX]
+    50xx KWave x2 PHANTOM
+    50xx Doransso Phantom x1 PHANTOM
+    50xx BMPI Phantom x1 PHANTOM 
+    50xx BV Phantom x1 PHANTOM
+    51xx Wrist x1 IN VIVO
+    51xx Radial x1 IN VIVO
+    51xx Finger x1 IN VIVO
+  [VISUALSONICS]
+    6xxx Bladder x1 IN VIVO
+    6xxx Brain x1 IN VIVO
+    6xxx Hindlimb x1 IN VIVO
+    6xxx Kidney x1 IN VIVO
+    6xxx Liver x1 IN VIVO
+----------------------------------
+
+[Reasoning]
+Mice = Most real examples we have, we want to focus on this
+Mice Phantom subset = Very simple and 'boring' images, not necessarily focus, agar based phantoms
+SWFD = Two different ways (semi circle, and multisegment arrays) of real forearm scans, but slightly uninteresting images)
+Visualsonics = Included for variety of systems and more varied research basis
+Acousticx = Included for variety of systems and more varied research basis
+
+NNE is skipped due to instability of quality judgement
+ZENODO is skipped due to nature of dataset which leads to evaluation being potentially random
+
+Total Estimate = 1200 seconds of content (~16min)
+
+
+

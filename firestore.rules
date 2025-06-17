@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // results: completely open for read & write
+    match /results/{docId} {
+      allow read, write: if true;
+    }
+
+    // sessions: open for create & update (to mark “started” & later “completed”),
+    // but no reads or deletes
+    match /sessions/{sessionId} {
+      allow create, update: if true;
+      allow read, delete:   if false;
+    }
+
+    // everything else locked
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

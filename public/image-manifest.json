@@ -1,0 +1,377 @@
+{
+  "calibration": [
+    "SMPTE_RP-133.webp"
+  ],
+  "instructions": [
+    "annot1.webp",
+    "annot2.webp",
+    "annot3.webp",
+    "instr1.webp",
+    "instr2.webp",
+    "instr3.webp"
+  ],
+  "practice": [
+    "image_192_128.webp",
+    "image_192_256.webp",
+    "image_192_32.webp",
+    "image_192_full.webp"
+  ],
+  "scene_2201": [
+    "image_113_128.webp",
+    "image_113_16.webp",
+    "image_113_256.webp",
+    "image_113_32.webp",
+    "image_113_64.webp",
+    "image_113_full.webp"
+  ],
+  "scene_2203": [
+    "image_209_128.webp",
+    "image_209_16.webp",
+    "image_209_256.webp",
+    "image_209_32.webp",
+    "image_209_64.webp",
+    "image_209_full.webp"
+  ],
+  "scene_2205": [
+    "image_090_128.webp",
+    "image_090_16.webp",
+    "image_090_256.webp",
+    "image_090_32.webp",
+    "image_090_64.webp",
+    "image_090_full.webp"
+  ],
+  "scene_2207": [
+    "image_154_128.webp",
+    "image_154_16.webp",
+    "image_154_256.webp",
+    "image_154_32.webp",
+    "image_154_64.webp",
+    "image_154_full.webp"
+  ],
+  "scene_2209": [
+    "image_064_128.webp",
+    "image_064_16.webp",
+    "image_064_256.webp",
+    "image_064_32.webp",
+    "image_064_64.webp",
+    "image_064_full.webp"
+  ],
+  "scene_2211": [
+    "image_091_128.webp",
+    "image_091_16.webp",
+    "image_091_256.webp",
+    "image_091_32.webp",
+    "image_091_64.webp",
+    "image_091_full.webp"
+  ],
+  "scene_2213": [
+    "image_192_128.webp",
+    "image_192_16.webp",
+    "image_192_256.webp",
+    "image_192_32.webp",
+    "image_192_64.webp",
+    "image_192_full.webp"
+  ],
+  "scene_2216": [
+    "image_100_128.webp",
+    "image_100_16.webp",
+    "image_100_256.webp",
+    "image_100_32.webp",
+    "image_100_64.webp",
+    "image_100_full.webp"
+  ],
+  "scene_2217": [
+    "image_211_128.webp",
+    "image_211_16.webp",
+    "image_211_256.webp",
+    "image_211_32.webp",
+    "image_211_64.webp",
+    "image_211_full.webp"
+  ],
+  "scene_2219": [
+    "image_170_128.webp",
+    "image_170_16.webp",
+    "image_170_256.webp",
+    "image_170_32.webp",
+    "image_170_64.webp",
+    "image_170_full.webp"
+  ],
+  "scene_2304": [
+    "image_212_128.webp",
+    "image_212_16.webp",
+    "image_212_32.webp",
+    "image_212_64.webp",
+    "image_212_8.webp",
+    "image_212_full.webp"
+  ],
+  "scene_2308": [
+    "image_373_128.webp",
+    "image_373_16.webp",
+    "image_373_32.webp",
+    "image_373_64.webp",
+    "image_373_8.webp",
+    "image_373_full.webp"
+  ],
+  "scene_2312": [
+    "image_287_128.webp",
+    "image_287_16.webp",
+    "image_287_32.webp",
+    "image_287_64.webp",
+    "image_287_8.webp",
+    "image_287_full.webp"
+  ],
+  "scene_2316": [
+    "image_222_128.webp",
+    "image_222_16.webp",
+    "image_222_32.webp",
+    "image_222_64.webp",
+    "image_222_8.webp",
+    "image_222_full.webp"
+  ],
+  "scene_2320": [
+    "image_181_128.webp",
+    "image_181_16.webp",
+    "image_181_32.webp",
+    "image_181_64.webp",
+    "image_181_8.webp",
+    "image_181_full.webp"
+  ],
+  "scene_3201": [
+    "SWFD_semicircle_sc,lv128_BP_slice0031.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0031.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0031.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0031.webp",
+    "SWFD_semicircle_sc_BP_slice0031.webp"
+  ],
+  "scene_3203": [
+    "SWFD_semicircle_sc,lv128_BP_slice0090.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0090.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0090.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0090.webp",
+    "SWFD_semicircle_sc_BP_slice0090.webp"
+  ],
+  "scene_3205": [
+    "SWFD_semicircle_sc,lv128_BP_slice0070.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0070.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0070.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0070.webp",
+    "SWFD_semicircle_sc_BP_slice0070.webp"
+  ],
+  "scene_3207": [
+    "SWFD_semicircle_sc,lv128_BP_slice0002.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0002.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0002.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0002.webp",
+    "SWFD_semicircle_sc_BP_slice0002.webp"
+  ],
+  "scene_3209": [
+    "SWFD_semicircle_sc,lv128_BP_slice0000.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0000.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0000.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0000.webp",
+    "SWFD_semicircle_sc_BP_slice0000.webp"
+  ],
+  "scene_3211": [
+    "SWFD_semicircle_sc,lv128_BP_slice0067.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0067.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0067.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0067.webp",
+    "SWFD_semicircle_sc_BP_slice0067.webp"
+  ],
+  "scene_3213": [
+    "SWFD_semicircle_sc,lv128_BP_slice0095.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0095.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0095.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0095.webp",
+    "SWFD_semicircle_sc_BP_slice0095.webp"
+  ],
+  "scene_3215": [
+    "SWFD_semicircle_sc,lv128_BP_slice0046.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0046.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0046.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0046.webp",
+    "SWFD_semicircle_sc_BP_slice0046.webp"
+  ],
+  "scene_3217": [
+    "SWFD_semicircle_sc,lv128_BP_slice0041.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0041.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0041.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0041.webp",
+    "SWFD_semicircle_sc_BP_slice0041.webp"
+  ],
+  "scene_3219": [
+    "SWFD_semicircle_sc,lv128_BP_slice0098.webp",
+    "SWFD_semicircle_sc,ss128_BP_slice0098.webp",
+    "SWFD_semicircle_sc,ss32_BP_slice0098.webp",
+    "SWFD_semicircle_sc,ss64_BP_slice0098.webp",
+    "SWFD_semicircle_sc_BP_slice0098.webp"
+  ],
+  "scene_3301": [
+    "SWFD_multisegment_linear_BP_slice0082.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0082.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0082.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0082.webp",
+    "SWFD_multisegment_ms_BP_slice0082.webp"
+  ],
+  "scene_3303": [
+    "SWFD_multisegment_linear_BP_slice0067.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0067.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0067.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0067.webp",
+    "SWFD_multisegment_ms_BP_slice0067.webp"
+  ],
+  "scene_3305": [
+    "SWFD_multisegment_linear_BP_slice0097.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0097.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0097.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0097.webp",
+    "SWFD_multisegment_ms_BP_slice0097.webp"
+  ],
+  "scene_3307": [
+    "SWFD_multisegment_linear_BP_slice0041.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0041.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0041.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0041.webp",
+    "SWFD_multisegment_ms_BP_slice0041.webp"
+  ],
+  "scene_3309": [
+    "SWFD_multisegment_linear_BP_slice0018.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0018.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0018.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0018.webp",
+    "SWFD_multisegment_ms_BP_slice0018.webp"
+  ],
+  "scene_3311": [
+    "SWFD_multisegment_linear_BP_slice0023.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0023.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0023.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0023.webp",
+    "SWFD_multisegment_ms_BP_slice0023.webp"
+  ],
+  "scene_3313": [
+    "SWFD_multisegment_linear_BP_slice0042.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0042.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0042.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0042.webp",
+    "SWFD_multisegment_ms_BP_slice0042.webp"
+  ],
+  "scene_3315": [
+    "SWFD_multisegment_linear_BP_slice0084.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0084.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0084.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0084.webp",
+    "SWFD_multisegment_ms_BP_slice0084.webp"
+  ],
+  "scene_3317": [
+    "SWFD_multisegment_linear_BP_slice0056.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0056.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0056.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0056.webp",
+    "SWFD_multisegment_ms_BP_slice0056.webp"
+  ],
+  "scene_3319": [
+    "SWFD_multisegment_linear_BP_slice0048.webp",
+    "SWFD_multisegment_ms,ss128_BP_slice0048.webp",
+    "SWFD_multisegment_ms,ss32_BP_slice0048.webp",
+    "SWFD_multisegment_ms,ss64_BP_slice0048.webp",
+    "SWFD_multisegment_ms_BP_slice0048.webp"
+  ],
+  "scene_5001": [
+    "DoranssoPhantom_Rf_101822_211937 PA2.webp",
+    "DoranssoPhantom_Rf_101822_211937 PA3.webp",
+    "DoranssoPhantom_Rf_101822_211937 PA4.webp",
+    "DoranssoPhantom_Rf_101822_211937 PA5.webp",
+    "DoranssoPhantom_Rf_101822_211937 PA6.webp",
+    "DoranssoPhantom_Rf_101822_211937 PA7.webp",
+    "DoranssoPhantom_Rf_101822_211937 PA_GT.webp"
+  ],
+  "scene_5002": [
+    "KWave_Rf_102622_011023 PA2.webp",
+    "KWave_Rf_102622_011023 PA3.webp",
+    "KWave_Rf_102622_011023 PA4.webp",
+    "KWave_Rf_102622_011023 PA5.webp",
+    "KWave_Rf_102622_011023 PA6.webp",
+    "KWave_Rf_102622_011023 PA7.webp",
+    "KWave_Rf_102622_011023 PA_GT.webp"
+  ],
+  "scene_5003": [
+    "BVPhantom_Rf_102622_020539 PA2.webp",
+    "BVPhantom_Rf_102622_020539 PA3.webp",
+    "BVPhantom_Rf_102622_020539 PA4.webp",
+    "BVPhantom_Rf_102622_020539 PA5.webp",
+    "BVPhantom_Rf_102622_020539 PA6.webp",
+    "BVPhantom_Rf_102622_020539 PA7.webp",
+    "BVPhantom_Rf_102622_020539 PA_GT.webp"
+  ],
+  "scene_5004": [
+    "BMPIPhantom_Rf_101922_174436 PA2.webp",
+    "BMPIPhantom_Rf_101922_174436 PA3.webp",
+    "BMPIPhantom_Rf_101922_174436 PA4.webp",
+    "BMPIPhantom_Rf_101922_174436 PA5.webp",
+    "BMPIPhantom_Rf_101922_174436 PA6.webp",
+    "BMPIPhantom_Rf_101922_174436 PA7.webp",
+    "BMPIPhantom_Rf_101922_174436 PA_GT.webp"
+  ],
+  "scene_5005": [
+    "KWave_Rf_090122_211601 PA1.webp",
+    "KWave_Rf_090122_211601 PA2.webp",
+    "KWave_Rf_090122_211601 PA3.webp",
+    "KWave_Rf_090122_211601 PA4.webp",
+    "KWave_Rf_090122_211601 PA5.webp",
+    "KWave_Rf_090122_211601 PA6.webp",
+    "KWave_Rf_090122_211601 PA7.webp"
+  ],
+  "scene_5100": [
+    "Wrist 1.webp",
+    "Wrist 2.webp",
+    "Wrist 3.webp",
+    "Wrist 4.webp",
+    "Wrist 5.webp"
+  ],
+  "scene_5101": [
+    "Radial 1.webp",
+    "Radial 2.webp",
+    "Radial 3.webp",
+    "Radial 4.webp",
+    "Radial 5.webp",
+    "Radial 6.webp"
+  ],
+  "scene_5102": [
+    "Finger 1.webp",
+    "Finger 2.webp",
+    "Finger 3.webp",
+    "Finger 4.webp",
+    "Finger 5.webp",
+    "Finger 6.webp"
+  ],
+  "scene_6000": [
+    "Liver_1 51-80.webp",
+    "Liver_1 54-80.webp",
+    "Liver_1 56-80.webp",
+    "Liver_1 59-80.webp"
+  ],
+  "scene_6001": [
+    "Bladder 50-80.webp",
+    "Bladder 53-80.webp",
+    "Bladder 56-80.webp",
+    "Bladder 59-80.webp"
+  ],
+  "scene_6002": [
+    "Brain 51-80.webp",
+    "Brain 54-80.webp",
+    "Brain 56-80.webp",
+    "Brain-59-80.webp"
+  ],
+  "scene_6003": [
+    "Hindlimb 49-80.webp",
+    "Hindlimb 53-80.webp",
+    "Hindlimb 56-80.webp",
+    "Hindlimb 59-80.webp"
+  ],
+  "scene_6004": [
+    "Kidneys 900nm 53-80.webp",
+    "Kidneys 900nm 56-80.webp",
+    "Kidneys 900nm 59-80.webp",
+    "Kidneys cross section -50-80.webp"
+  ]
+}

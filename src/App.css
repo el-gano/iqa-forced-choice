@@ -1,38 +1,428 @@
+/*
+  App.css
+
+  This stylesheet defines the visual appearance and layout for the IQA Forced Choice web application.
+  It includes global styles, component-specific classes, and interactive UI effects.
+
+  Key Sections:
+
+  1. Global Styles:
+     - Sets base font, background, and text color for the app.
+     - Imports 'Inter' font from Google Fonts.
+
+  2. Layout Containers:
+     - .slide-container, .slide-box: Main slide layout and centering.
+     - .form-box: Narrower container for forms.
+
+  3. Typography:
+     - .slide-title, .slide-text: Styles for slide headings and body text.
+
+  4. Image Display:
+     - .slide-image: Single image styling.
+     - .slide-images-container, .slide-image-item: Multi-image grid layout.
+     - .img-wrapper: Wraps images for borders and padding.
+
+  5. Comparison UI:
+     - .compare-container, .compare-block: Side-by-side image comparison.
+     - .compare-img: Ensures images scale and render correctly.
+     - .compare-btn: Button for comparison actions.
+     - .compare-description: Description box for comparison context.
+
+  6. Navigation:
+     - .nav: Navigation button layout.
+     - .slide-footer: Footer text styling.
+
+  7. Forms:
+     - .form-field: Field spacing and label styling.
+     - Input, textarea, select: Unified input appearance, focus, and hover effects.
+     - .required-asterisk: Highlights required fields.
+     - .checkbox-field: Checkbox alignment.
+
+  8. Buttons:
+     - .btn: Primary button style with hover and blink animation.
+     - .timer-overlay: Overlay for timed button states.
+
+  9. Progress Bar:
+     - .progress-container, .progress-bar: Progress indicator at top of slides.
+     - .progress-bar::after: Animated handle with pulse effect.
+
+  10. Slider Input:
+      - .slider-field: Aligns slider and value.
+      - .slider-value: Numeric readout.
+      - Custom range input and thumb styling.
+
+  11. Animations:
+      - @keyframes blink-border: Button border blink.
+      - @keyframes pulse: Progress handle pulse glow.
+
+  The stylesheet is designed for a dark theme, with accent colors for interactivity and accessibility.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 .App {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  background: #262626;
+  min-height: 100vh;
+  color: #fff;
+}
+
+a:link {
+  color: #fff;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.slide-container {
+  display:        flex;
+  justify-content: center;
+  align-items:     center;
+  padding:         1rem;
+  min-height:      100vh;
+  box-sizing:      border-box;
+  background:      #262626;
+}
+
+.slide-box {
+  width: 90vw;
+  max-width: 1000px;
+  background: #313131;
+  border-radius: 12px;
+  border: 1px solid #464646;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.slide-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.slide-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Single-image slide */
+.slide-image {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 90vw;
+  max-width: -webkit-fill-available;
+  max-width: -moz-available;
+  max-width: stretch;
+  height: auto;
+}
+
+/* Multi-image layout */
+.slide-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.slide-image-item {
+  flex: 1 1 calc(33% - 1rem);
+  max-width: calc(33% - 1rem);
+  height: auto;
+  display: block;
+}
+
+.compare-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.compare-block {
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+/* wrap the image (so borders, padding, etc, aren't filtered) */
+.img-wrapper {
+  border: 1px solid #5c5c5c;
+  display: flex;
+}
+
+.compare-img {
+  width: 100%;
+  height: auto;
+  /* remove any unexpected color interpolation */
+  image-rendering: auto;
+}
+
+.compare-btn {
+  margin-top: 10px;
+}
+
+.compare-description {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255,255,255,0.05);
+  border-left: 3px solid #fff;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ddd;
+  white-space: pre-wrap;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.slide-footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Narrow the slide-box for forms */
+.form-box {
+  width: 80vw;
+  max-width: 400px;    /* portrait / narrow layout */
+}
+
+/* Vertical spacing between fields */
+.form-field {
+  margin-bottom: 1.2rem;
+}
+
+/* Ensure labels appear above inputs */
+.form-field label {
+  display:          block;
+  font-weight:      bold;
+  font-size:        0.9rem;
+  margin-bottom:    0.25rem;
+}
+
+/* Style for checkbox value */
+.form-field .checkbox-field {
+  font-weight: unset;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Style inputs & textarea */
+.form-field input[type="text"],
+.form-field input[type="number"],
+.form-field input[type="email"],
+.form-field input[type="password"],
+.form-field input[type="date"],
+.form-field textarea {
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  border: 1px solid #444;
+  border-radius: 3px;
+  background-color: #262626;
+  color: #fff;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Focus effect */
+.form-field input[type="text"]:focus,
+.form-field input[type="number"]:focus,
+.form-field input[type="email"]:focus,
+.form-field input[type="password"]:focus,
+.form-field input[type="date"]:focus,
+.form-field textarea:focus {
+  outline: none;
+  box-shadow: 0 0 3px 0 rgba(27, 27, 27, 0.25);
+}
+
+/* Hover Effect */
+.form-field input[type="text"]:hover,
+.form-field input[type="number"]:hover,
+.form-field input[type="email"]:hover,
+.form-field input[type="password"]:hover,
+.form-field input[type="date"]:hover,
+.form-field textarea:hover {
+  border-color: #969696;
+  box-shadow: 0 0 8px 3px #44444463;
+}
+
+/* Checkbox spacing */
+.form-field input[type="checkbox"] {
+  margin-right:     0.5rem;
+  transform:        scale(1.1);
+}
+
+/* Dropdown in forms */
+.form-field select {
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  border: 1px solid #444;
+  border-radius: 3px;
+  background-color: #262626;
+  color: #fff;
+  appearance: none;           /* remove native arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'10'%20height%3D'6'%20viewBox%3D'0%200%2010%206'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M0%200l5%206%205-6z'%20fill%3D'%23fff'%20/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 10px 6px;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.form-field select:focus {
+  outline: none;
+  box-shadow: 0 0 3px 0 rgba(27,27,27,0.25);
+  border-color: #969696;
+}
+
+.form-field select:hover {
+  border-color: #969696;
+}
+
+/* Make the form nav button full‑width on form slides */
+.form-box .nav {
+  margin-top:       1.5rem;
+}
+.form-box .nav .btn {
+  width:            100%;
+  text-align:       center;
+}
+
+/* Required asterisk styling */
+.required-asterisk {
+  color: #ff3333;
+  margin-left: 0.1rem;
+  font-weight: 100;
+}
+
+.btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #5c5c5c;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: #222;
+}
+
+
+/* 2) overlay that "washes out" the button */
+.timer-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 4) blink animation */
+@keyframes blink-border {
+  0%      { border-color: #5c5c5c; }
+  25%     { border-color: #909090; }
+  100%    { border-color: #5c5c5c; }
+}
+.btn.blink {
+  animation: blink-border 0.5s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* --- Progress bar at top of slide --- */
+.progress-container {
+  position: relative;
+  height: 4px;
+  background: #444;       /* track color */
+  border-radius: 2px;
+  margin-bottom: 1.75rem;
+}
+
+/* the filled bar */
+.progress-bar {
+  height: 100%;
+  background: #fff;    /* accent color */
+  transition: width 0.2s ease;
+  border-radius: 2px;
+  position: relative;     /* for its ::after */
+}
+
+/* the circle handle */
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
+  animation: pulse 2s infinite;
+}
+
+/* slider container to align track + value */
+.slider-field {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+  margin: 1rem 0 1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* the HTML range input styling */
+.slider-field input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: #5c5c5c;
+  outline: none;
+}
+.slider-field input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+.slider-field input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 6px rgba(255,255,255,0.9);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* the numeric read-out */
+.slider-value {
+  width: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* pulse glow animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
   }
 }

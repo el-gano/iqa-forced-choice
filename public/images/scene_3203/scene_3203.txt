@@ -1,0 +1,1 @@
+These images show a vertical slice of a forearm (horizontal curved structure) and blood vessels (disk shape below). Source: single wavelength forearm dataset, Ozdemir et al., (2022). OADAT: Experimental and synthetic clinical optoacoustic data for standardized image processing.

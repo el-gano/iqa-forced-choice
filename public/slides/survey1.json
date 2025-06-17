@@ -1,0 +1,290 @@
+{
+  "footer": "© 2025 Photoacoustic Imaging Subjective IQA Survey",
+
+  "preSlides": [
+    {
+      "type": "text",
+      "title": "Invitation to Take Part",
+      "content": [
+        {
+          "type": "text",
+          "text": "**You are being invited to take part** in a research study to further our understanding of Photoacoustic Image Quality Assessment. This study is jointly conducted by Erasmus Medical Center and the University of Amsterdam, in collaboration with the International Photoacoustic Standardization Consortium (IPASC)."
+        },
+        {
+          "type": "text",
+          "text": "**Objective:** To evaluate human perceptual ranking of photoacoustic images and compare against existing objective metrics."
+        },
+        {
+          "type": "text",
+          "text": "**Who can take part:** Adults (18+) with normal or corrected vision."
+        },
+        {
+          "type": "text",
+          "text": "**What will you be doing?**\n- A short online survey (~15 min).\n You will compare pairs of grayscale images and select the higher-quality one\n. We collect your choices and timings only."
+        },
+        {
+          "type": "text",
+          "text": "**Voluntary participation**\nYou may withdraw at any time without reason from the survey; your data will then be destroyed. To withdraw after submission (up to one week), please contact us [here](mailto:ghanny.alladien@student.uva.nl?subject=Data%20Withdrawal) and provide your name or email address used in your submission."
+        },
+        {
+          "type": "text",
+          "text": "**Data treatment**\nAll survey data except for optional fields (i.e., name, institution) is entirely pseudonymised, stored on encrypted servers, kept for 2 years, and afterwards securely destroyed. No survey data will be used for Generative AI. survey results excluding personal data may be shared on the Open Science Foundation."
+        },
+        {
+          "type": "text",
+          "text": "**Questions or concerns**\n Please contact us [here](mailto:ghanny.alladien@student.uva.nl,n.awasthi@uva.nl,f.kalloorjoseph@erasmusmc.nl?subject=Question%20or%20Concern%20regarding%20PAI%20Quality%20Assessment%20Survey)."
+        },
+        {
+          "type": "text",
+          "text": "**Involved researchers:** [Ghanny Alladien](mailto:ghanny.alladien@student.uva.nl), [Melle van der Brugge](mailto:melle.vanderbrugge@student.uva.nl), [Nick Baggerman](mailto:nick.baggerman@student.uva.nl), [Navchetan Awasthi](n.awasthi@uva.nl), [Francis Kalloor Joseph](mailto:f.kalloorjoseph@erasmusmc.nl)"
+        }
+      ]
+    },
+    {
+      "type": "form",
+      "title": "Declaration of Consent",
+      "fields": [
+        {
+          "type": "checkbox",
+          "name": "consent18",
+          "label": "Age Requirement",
+          "value": "I confirm I am 18 years or older.",
+          "required": true
+        },
+        {
+          "type": "checkbox",
+          "name": "consentRead",
+          "label": "I Understand",
+          "value": "I have read and understood the provided information on the previous slide.",
+          "required": true
+        },
+        {
+          "type": "checkbox",
+          "name": "consentParticipate",
+          "label": "Agree to Participate",
+          "value": "I agree to participate in this study.",
+          "required": true
+        },
+        {
+          "type": "checkbox",
+          "name": "consentData",
+          "label": "Agree to use of Data",
+          "value": "I consent to the use of my anonymised data as described previously (GDPR compliant).",
+          "required": true
+        },
+        {
+          "type": "checkbox",
+          "name": "consentFurther",
+          "label": "Agree to sharing of Data",
+          "value": "I consent to the use of my subjective image quality scores for further data analysis and publishing beyond the scope of this research",
+          "required": false
+        },
+        {
+          "type": "date",
+          "name": "consentDate",
+          "label": "Date",
+          "required": true,
+          "defaultToday": true
+        }
+      ]
+    },
+    {
+      "type": "form",
+      "title": "Participant Information",
+      "fields": [
+        {
+          "type": "text",
+          "name": "name",
+          "label": "Name (optional)",
+          "placeholder": "what should we call you?",
+          "required": false,
+          "anonymous": false
+        },
+        {
+          "type": "text",
+          "name": "institute",
+          "label": "Institute (optional)",
+          "placeholder": "University of Amsterdam",
+          "required": false,
+          "anonymous": false
+        },
+        {
+          "type": "select",
+          "name": "expertiseLevel",
+          "label": "How familiar are you with assessing photoacoustic, ultrasound, or similar medical images?",
+          "required": true,
+          "options": [
+            { "value": "Unfamiliar",    "label": "Unfamiliar" },
+            { "value": "Familiar",      "label": "Familiar (e.g. Medical Student)" },
+            { "value": "Expert",        "label": "Expert (Professional Experience)" },
+            { "value": "Other",         "label": "Other (please specify below)" }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "expertiseOther",
+          "label": "If “Other”, please specify",
+          "placeholder": "Your answer",
+          "required": false,
+          "dependsOn": { "field": "expertiseLevel", "value": "Other" }
+        },
+        {
+          "type": "checkbox",
+          "name": "noVision",
+          "value": "I confirm I have no uncorrected visual impairments such as significant nearsightedness or farsightedness, cataracts, glaucoma, macular degeneration, severe contrast-sensitivity loss, or other conditions that will affect my ability to evaluate grayscale images.",
+          "label": "Vision Check",
+          "required": true
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "title": "Before You Begin",
+      "timer": 3,
+      "content": [
+        {
+          "type": "text",
+          "text": "- We strongly advise to take this survey on a larger screen such as a desktop or laptop\n- Sit in a well-lit room with minimal glare on your screen\n- Ensure your display is clean and free from dust\n- Make sure you are rested and free from distractions\n- Expect to spend about **15 minutes** on this survey"
+        }
+      ]
+    },
+    {
+      "type": "imageText",
+      "title": "Brightness Calibration",
+      "timer": 15,
+      "content": [
+        {
+          "type": "text",
+          "text": "**This is an SMPTE (Society of Motion Picture and Television Engineers) test pattern** - A test pattern used in medical imaging to evaluate the quality of medical imaging monitors.\n\nAdjust your **screen brightness** so that you can just barely see all of the 21 grayscale steps from black to white, as well as the 5% patch within the **darkest** and **lightest** grayscale patches (highlighted with red arrows in the image below). This ensures you will see the full range of details in the images to come."
+        },
+        {
+          "type": "text",
+          "text": "Use the buttons on your monitor or your operating system's display settings to increase or decrease brightness."
+        },
+        {
+          "type": "image",
+          "image": "/images/calibration/SMPTE_RP-133.webp"
+        },
+        {
+          "type": "text",
+          "text": "_Tip:_ If any two adjacent steps, or the 5% patch, look identical, please continue to adjust brightness or viewing condtions until every block is distinct."
+        }
+      ]
+    },
+    {
+      "type": "imageText",
+      "title": "Background",
+      "timer": 10,
+      "content": [
+        {
+          "type": "text",
+          "text": "Photoacoustic imaging is a cutting-edge technique that combines light and sound to visualize structures beneath the skin. It works by delivering short laser pulses into tissue. These pulses cause tiny vibrations (ultrasound waves) where light is absorbed, such as in blood vessels. By detecting these ultrasound signals, we can reconstruct detailed images that reveal what is happening inside the body."
+        },
+        {
+          "type": "text",
+          "text": "**_In this survey, you will be shown pairs of photoacoustic images side by side, along with a brief description of what you are looking at. The images shown can either be of **human or animal tissues**, or **tissue mimicking phantoms** (artificial objects specifically designed to mimic certain tissue properties). For each pair, your task is simple: choose the image you believe has the better overall quality._**"
+        },
+        {
+          "type": "text",
+          "text": "**Why are we doing this?**\nComputers can rate image quality using automatic scoring systems called Image Quality Assessment (IQA) metrics, but how well do those scores match what human observers actually see? Your input helps us find out and improve these automated tools."
+        },
+        {
+          "type": "text",
+          "text": "As you review the images, keep an eye out for visual artifacts that can lower image quality. These might include:\n\n- **Reconstruction Artifacts** - Streaks, or semicircular structures that should not be there\n- **Measurement Noise** - Grainy texture across sections of the image or the entire image\n- **Limited View Artifacts** - Distortion around the right and left edges of image features\n- **Reflection Artifacts** - You see a similar or stretched version of an image feature below its actual location\n\nThese issues can arise in experimental photoacoustic imaging due to non-ideal detection and/or reconstruction."
+        },
+        {
+          "type": "text",
+          "text": "Focus on aspects like contrast, sharpness, and the presence of any of the aforementioned distortions. Below are several examples or representative images you may encounter during the survey, in **the next slide** we will also higlight some of the distortions in more detail."
+        },
+        {
+          "type": "images",
+          "images": [
+            "/images/instructions/instr1.webp",
+            "/images/instructions/instr2.webp",
+            "/images/instructions/instr3.webp"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "If you **cannot** see the differences clearly, please adjust your display brightness or room lighting until all details are distinguishable."
+        }
+      ]
+    },
+    {
+      "type": "imageText",
+      "title": "Annotated Examples",
+      "timer": 10,
+      "content": [
+        {
+          "type": "text",
+          "text": "Below are several annotated examples highlighting common artifacts you may encounter. Each image shows a photoacoustic scan of a forearm and its blood vessels, obtained using different imaging methods."
+        },
+        {
+          "type": "images",
+          "images": [
+            "/images/instructions/annot1.webp",
+            "/images/instructions/annot2.webp",
+            "/images/instructions/annot3.webp"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "- **A. Reconstruction Artifact (Streaking):** Notice the long, curved lines radiating from strong image features. These streaks are caused by limitations in the reconstruction algorithm and reduce overall image clarity.\n\n- **B. Limited View Artifact:** See the marked region. Due to the imaging geometry (e.g., a linear array), structures near the left and right edges appear distorted. This loss of detail is a result of insufficient angular coverage and is a hardware limitation.\n\n- **C. Noise:** Notice the region containing granular texture, primarily caused by electronic noise during the signal acquisition.\n\n When comparing images, consider overall quality, contrast, and absence of distracting artifacts. Always select the image you personally believe looks better."
+        }
+      ]
+    }
+  ],
+
+  "practiceIntroSlides": [
+    {
+      "type": "text",
+      "title": "Practice Session",
+      "timer": 3,
+      "content": [
+        {
+          "type": "text",
+          "text": "When you are ready, click **Next** to start a short series of practice comparisons. It works like the real survey, but **no data** here will be recorded."
+        },
+        {
+          "type": "text",
+          "text": "**Please note:** once you begin any comparison, you cannot go back or reload the page. There is no time limit set for each comparison, feel free to take as long as you need to decide which image you prefer."
+        }
+      ]
+    }
+  ],
+
+  "practiceScenes": ["practice"],
+
+  "practiceOutroSlides": [
+    {
+      "type": "text",
+      "title": "Ready to Begin?",
+      "content": [
+        {
+          "type": "text",
+          "text": "Great! Now that you are familiar, click **Next** to begin the real image comparisons.\n\n**Thank you** for contributing your valuable judgments for advancing quality assessment for photoacoustic imaging research."
+        },
+        {
+          "type": "text",
+          "text": "**Please note:** once you begin any comparison, you cannot go back or reload the page. There is no time limit set for each comparison, feel free to take as long as you need to decide which image you prefer. If desired, feel free to take breaks during the survey."
+        }
+      ]
+    }
+  ],
+
+  "compareScenes": ["scene_"],
+
+  "postSlides": [
+    {
+      "type": "text",
+      "title": "Thank You",
+      "content": [
+        {
+          "type": "text",
+          "text": "We appreciate your time and insights! Please **click **SUBMIT**** to finalize the survey. Your responses will help improve photoacoustic imaging techniques.  \n\n****Acknowledgement****  \nWe gratefully acknowledge the research groups and consortia whose contributions made this survey's dataset possible, and we extend our thanks to the IPASC leadership for their support.  \n\n- N. Davoudi, X. L. Deán-Ben, and D. Razansky (2019), 'Deep learning optoacoustic tomography with sparse data. Nature Machine Intelligence', 1(10), 453-460\n- B. Lafci, F. Ozdemir, Deán-Ben, Xosé Luís, D. Razansky, and F. Perez-Cruz (2022), 'OADAT: Experimental and synthetic clinical optoacoustic data for standardized image processing'\n- C.F. Morsink, A.J. Dam-Vervloet, M.E. Krommendijk, M. Kaya, C. Cuartas-Vélez, T. Knop, F. Kalloor Joseph, and N. Bosschaart (2023), 'Design and characterization of color printed polyurethane films as biomedical phantom layers.' Biomedical optics express 14, no. 9, 4485-4506\n- The PHIRE project, funded by the European Union's Horizon Europe innovation program under Grant Agreement No. 101113193\n- W. Xia, M.K.A. Singh, E. Maneas, N. Sato, Y. Shigeta, T. Agano, S. Ourselin, S.J. West, and A.E. Desjardins (2018), 'Handheld real-time LED-based photoacoustic and ultrasound imaging system for accurate visualization of clinical metal needles and superficial vasculature to guide minimally invasive procedures.' Sensors 18, no. 5, 139\n- R. Bulsink, M.K.A. Singh, M. Xavierselvan, S. Mallidi, W. Steenbergen, and F. Kalloor Joseph (2021), 'Oxygen saturation imaging using LED-based photoacoustic system.' Sensors 21, no. 1, 283\n- F. Kalloor Joseph, Y. E. Boink, M. Dantuma, M.K.A. Singh , S. Manohar, and W. Steenbergen (2020), 'Tomographic imaging with an ultrasound and LED-based photoacoustic system.' Biomedical optics express 11, no. 4, 2152"
+        }
+      ]
+    }
+  ]
+}
